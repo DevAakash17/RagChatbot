@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  embedding-service:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./vector_db_data:/app/vector_db_data
+    environment:
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+      - VECTOR_DB_TYPE=chroma
+      - VECTOR_DB_PATH=/app/vector_db_data
+      - LOG_LEVEL=INFO

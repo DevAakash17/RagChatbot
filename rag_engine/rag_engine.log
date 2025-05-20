@@ -1,0 +1,305 @@
+2025-05-19 13:14:21,612 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 13:14:21,612 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 13:14:21,612 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 13:14:21,612 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 13:14:21,612 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 13:14:21,612 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 13:14:21,612 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 13:14:21,612 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 13:14:21,623 - rag_engine - INFO - Starting RAG Engine
+2025-05-19 13:14:23,337 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 13:14:23,337 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 13:14:23,338 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 13:14:23,338 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 13:14:23,338 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 13:14:23,338 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 13:14:23,338 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 13:14:23,338 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 13:14:29,658 - rag_engine - INFO - Request: GET /
+2025-05-19 13:14:29,658 - rag_engine - INFO - Request: GET /
+2025-05-19 13:14:29,659 - rag_engine - INFO - Response: 200 (0.0015s)
+2025-05-19 13:14:29,659 - rag_engine - INFO - Response: 200 (0.0015s)
+2025-05-19 13:14:29,680 - rag_engine - INFO - Request: GET /favicon.ico
+2025-05-19 13:14:29,680 - rag_engine - INFO - Request: GET /favicon.ico
+2025-05-19 13:14:29,681 - rag_engine - INFO - Response: 404 (0.0010s)
+2025-05-19 13:14:29,681 - rag_engine - INFO - Response: 404 (0.0010s)
+2025-05-19 13:14:35,805 - rag_engine - INFO - Request: GET /docs
+2025-05-19 13:14:35,805 - rag_engine - INFO - Request: GET /docs
+2025-05-19 13:14:35,807 - rag_engine - INFO - Response: 200 (0.0028s)
+2025-05-19 13:14:35,807 - rag_engine - INFO - Response: 200 (0.0028s)
+2025-05-19 13:14:35,858 - rag_engine - INFO - Request: GET /openapi.json
+2025-05-19 13:14:35,858 - rag_engine - INFO - Request: GET /openapi.json
+2025-05-19 13:14:35,921 - rag_engine - INFO - Response: 200 (0.0631s)
+2025-05-19 13:14:35,921 - rag_engine - INFO - Response: 200 (0.0631s)
+2025-05-19 15:21:05,038 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:21:05,038 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:21:05,046 - rag_engine - INFO - Response: 422 (0.0102s)
+2025-05-19 15:21:05,046 - rag_engine - INFO - Response: 422 (0.0102s)
+2025-05-19 15:21:14,690 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:21:14,690 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:21:14,715 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:21:14,734 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:21:14,734 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:21:14,735 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:21:14,735 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:21:14,735 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 15:21:14,739 - chatbot.rag_engine.services.embedding_client - ERROR - Embedding Service error: {"detail":"Not Found"}
+2025-05-19 15:21:14,740 - rag_engine - INFO - Response: 502 (0.0499s)
+2025-05-19 15:21:14,740 - rag_engine - INFO - Response: 502 (0.0499s)
+2025-05-19 15:29:40,458 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:29:40,458 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:29:40,465 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:29:44,156 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:29:44,157 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:29:44,157 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:29:44,157 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:29:44,157 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 15:29:44,163 - chatbot.rag_engine.services.embedding_client - ERROR - Embedding Service error: {"detail":"Not Found"}
+2025-05-19 15:29:44,164 - rag_engine - INFO - Response: 502 (3.7066s)
+2025-05-19 15:29:44,164 - rag_engine - INFO - Response: 502 (3.7066s)
+2025-05-19 15:35:35,707 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:35:35,707 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:36:13,925 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:37:17,341 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:37:17,342 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:37:17,343 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:37:23,050 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:37:23,051 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 15:37:23,066 - chatbot.rag_engine.services.embedding_client - ERROR - Embedding Service error: {"detail":"Not Found"}
+2025-05-19 15:37:23,068 - rag_engine - INFO - Response: 502 (107.3609s)
+2025-05-19 15:37:23,068 - rag_engine - INFO - Response: 502 (107.3609s)
+2025-05-19 15:37:48,779 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:37:48,779 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:37:58,751 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:37:58,769 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:37:58,769 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:37:58,770 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:38:21,379 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:38:21,380 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 15:38:21,390 - chatbot.rag_engine.services.embedding_client - ERROR - Embedding Service error: {"detail":"Not Found"}
+2025-05-19 15:38:21,392 - rag_engine - INFO - Response: 502 (32.6126s)
+2025-05-19 15:38:21,392 - rag_engine - INFO - Response: 502 (32.6126s)
+2025-05-19 15:38:45,340 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:38:45,340 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:38:45,347 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:38:45,367 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:38:45,368 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:38:45,369 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:38:49,532 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:38:52,722 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 15:54:57,323 - chatbot.rag_engine.services.embedding_client - ERROR - Embedding Service error: {"detail":"Not Found"}
+2025-05-19 15:54:57,337 - rag_engine - INFO - Response: 502 (971.9969s)
+2025-05-19 15:54:57,337 - rag_engine - INFO - Response: 502 (971.9969s)
+2025-05-19 15:54:59,061 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 15:54:59,061 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 15:54:59,061 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 15:54:59,061 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 15:54:59,061 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 15:54:59,061 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 15:54:59,061 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 15:54:59,061 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 15:55:02,313 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:55:02,313 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 15:55:02,333 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 15:55:02,377 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 15:55:02,378 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 15:55:02,378 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 15:55:06,051 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 15:55:09,717 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 16:00:52,011 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-19 16:01:49,856 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: Tell me a joke
+2025-05-19 16:24:43,513 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 16:24:43,514 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 16:24:43,514 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 16:24:43,514 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 16:24:43,514 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 16:24:43,515 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 16:24:43,515 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 16:24:43,515 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 16:24:43,532 - rag_engine - INFO - Starting RAG Engine
+2025-05-19 16:24:45,149 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 16:24:45,149 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 16:24:45,149 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 16:24:45,149 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 16:24:45,149 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 16:24:45,150 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 16:24:45,150 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 16:24:45,150 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 16:26:27,896 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 16:26:27,896 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 16:26:27,917 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 16:26:27,938 - chatbot.rag_engine.core.engine - INFO - Processing query: Tell me a joke
+2025-05-19 16:26:27,938 - chatbot.rag_engine.core.query_processor - INFO - Processing query: Tell me a joke
+2025-05-19 16:26:27,939 - chatbot.rag_engine.core.query_processor - INFO - Processed query: tell me a joke
+2025-05-19 16:26:27,939 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: tell me a joke
+2025-05-19 16:26:27,939 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: tell me a joke
+2025-05-19 16:26:34,728 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-19 16:26:34,728 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: Tell me a joke
+2025-05-19 16:27:47,513 - chatbot.rag_engine.core.response_generator - INFO - Generating response with model: gemini-2.0-flash
+2025-05-19 16:27:47,514 - chatbot.rag_engine.services.llm_client - INFO - Generating text with model: gemini-2.0-flash
+2025-05-19 16:27:48,742 - chatbot.rag_engine.core.response_generator - INFO - Response generated successfully
+2025-05-19 16:28:01,954 - chatbot.rag_engine.core.engine - INFO - Query processing completed successfully
+2025-05-19 16:28:04,713 - rag_engine - INFO - Response: 200 (96.8168s)
+2025-05-19 16:28:04,713 - rag_engine - INFO - Response: 200 (96.8168s)
+2025-05-19 16:28:07,293 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 16:28:07,293 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 16:28:07,293 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 16:28:07,293 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 16:28:07,294 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 16:28:07,294 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 16:28:07,294 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 16:28:07,294 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 23:47:01,669 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 23:47:01,670 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 23:47:01,670 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 23:47:01,670 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 23:47:01,670 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 23:47:01,670 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 23:47:01,670 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 23:47:01,670 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 23:47:01,680 - rag_engine - INFO - Starting RAG Engine
+2025-05-19 23:48:44,727 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 23:48:44,727 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 23:48:44,727 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 23:48:44,727 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 23:48:44,727 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 23:48:44,727 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 23:48:44,728 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 23:48:44,728 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 23:48:44,737 - rag_engine - INFO - Starting RAG Engine
+2025-05-19 23:48:46,349 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-19 23:48:46,349 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-19 23:48:46,349 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-19 23:48:46,349 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-19 23:48:46,349 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-19 23:48:46,349 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-19 23:48:46,349 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-19 23:48:46,350 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-19 23:50:21,437 - rag_engine - INFO - Request: OPTIONS /api/v1/query
+2025-05-19 23:50:21,437 - rag_engine - INFO - Request: OPTIONS /api/v1/query
+2025-05-19 23:50:21,438 - rag_engine - INFO - Response: 200 (0.0019s)
+2025-05-19 23:50:21,438 - rag_engine - INFO - Response: 200 (0.0019s)
+2025-05-19 23:50:21,440 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:50:21,440 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:50:21,457 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 23:50:21,513 - chatbot.rag_engine.core.engine - INFO - Processing query: What is Angel One?
+2025-05-19 23:50:21,513 - chatbot.rag_engine.core.query_processor - INFO - Processing query: What is Angel One?
+2025-05-19 23:50:21,514 - chatbot.rag_engine.core.query_processor - INFO - Processed query: what is angel one
+2025-05-19 23:50:21,514 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: what is angel one
+2025-05-19 23:50:21,514 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: what is angel one
+2025-05-19 23:50:22,008 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-19 23:50:22,008 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: What is Angel One?
+2025-05-19 23:50:22,008 - chatbot.rag_engine.core.response_generator - INFO - Generating response with model: gemini-2.0-flash
+2025-05-19 23:50:22,008 - chatbot.rag_engine.services.llm_client - INFO - Generating text with model: gemini-2.0-flash
+2025-05-19 23:50:23,409 - chatbot.rag_engine.core.response_generator - INFO - Response generated successfully
+2025-05-19 23:50:23,409 - chatbot.rag_engine.core.engine - INFO - Query processing completed successfully
+2025-05-19 23:50:23,410 - rag_engine - INFO - Response: 200 (1.9699s)
+2025-05-19 23:50:23,410 - rag_engine - INFO - Response: 200 (1.9699s)
+2025-05-19 23:50:52,462 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:50:52,462 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:50:52,466 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 23:50:52,480 - chatbot.rag_engine.core.engine - INFO - Processing query: What are mutual funds?
+2025-05-19 23:50:52,480 - chatbot.rag_engine.core.query_processor - INFO - Processing query: What are mutual funds?
+2025-05-19 23:50:52,480 - chatbot.rag_engine.core.query_processor - INFO - Processed query: what are mutual funds
+2025-05-19 23:50:52,481 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: what are mutual funds
+2025-05-19 23:50:52,481 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: what are mutual funds
+2025-05-19 23:50:52,689 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-19 23:50:52,689 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: What are mutual funds?
+2025-05-19 23:50:52,689 - chatbot.rag_engine.core.response_generator - INFO - Generating response with model: gemini-2.0-flash
+2025-05-19 23:50:52,689 - chatbot.rag_engine.services.llm_client - INFO - Generating text with model: gemini-2.0-flash
+2025-05-19 23:50:54,491 - chatbot.rag_engine.core.response_generator - INFO - Response generated successfully
+2025-05-19 23:50:54,492 - chatbot.rag_engine.core.engine - INFO - Query processing completed successfully
+2025-05-19 23:50:54,494 - rag_engine - INFO - Response: 200 (2.0324s)
+2025-05-19 23:50:54,494 - rag_engine - INFO - Response: 200 (2.0324s)
+2025-05-19 23:51:19,075 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:51:19,075 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-19 23:51:19,080 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-19 23:51:19,093 - chatbot.rag_engine.core.engine - INFO - Processing query: What is Angel one?
+2025-05-19 23:51:19,093 - chatbot.rag_engine.core.query_processor - INFO - Processing query: What is Angel one?
+2025-05-19 23:51:19,093 - chatbot.rag_engine.core.query_processor - INFO - Processed query: what is angel one
+2025-05-19 23:51:19,093 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: what is angel one
+2025-05-19 23:51:19,093 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: what is angel one
+2025-05-19 23:51:19,166 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-19 23:51:19,166 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: What is Angel one?
+2025-05-19 23:51:19,166 - chatbot.rag_engine.core.response_generator - INFO - Generating response with model: gemini-2.0-flash
+2025-05-19 23:51:19,166 - chatbot.rag_engine.services.llm_client - INFO - Generating text with model: gemini-2.0-flash
+2025-05-19 23:51:20,926 - chatbot.rag_engine.core.response_generator - INFO - Response generated successfully
+2025-05-19 23:51:20,927 - chatbot.rag_engine.core.engine - INFO - Query processing completed successfully
+2025-05-19 23:51:20,928 - rag_engine - INFO - Response: 200 (1.8532s)
+2025-05-19 23:51:20,928 - rag_engine - INFO - Response: 200 (1.8532s)
+2025-05-20 00:29:44,454 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-20 00:29:44,454 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-20 00:29:44,454 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-20 00:29:44,455 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-20 00:29:44,455 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-20 00:29:44,455 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-20 00:29:44,455 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-20 00:29:44,455 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-20 00:29:44,465 - rag_engine - INFO - Starting RAG Engine
+2025-05-20 00:30:30,945 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-20 00:30:30,946 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-20 00:30:30,946 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-20 00:30:30,946 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-20 00:30:30,946 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-20 00:30:30,946 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-20 00:30:30,946 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-20 00:30:30,946 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-20 00:30:30,956 - rag_engine - INFO - Starting RAG Engine
+2025-05-20 00:31:19,028 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-20 00:31:19,028 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-20 00:31:19,028 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-20 00:31:19,028 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-20 00:31:19,028 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-20 00:31:19,028 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-20 00:31:19,028 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-20 00:31:19,029 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-20 00:31:19,038 - rag_engine - INFO - Starting RAG Engine
+2025-05-20 00:32:25,632 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-20 00:32:25,632 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-20 00:32:25,632 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-20 00:32:25,632 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-20 00:32:25,632 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-20 00:32:25,633 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-20 00:32:25,633 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-20 00:32:25,633 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-20 00:32:25,642 - rag_engine - INFO - Starting RAG Engine
+2025-05-20 00:32:27,238 - chatbot.rag_engine.services.embedding_client - INFO - Initialized Embedding Client with base URL: http://localhost:8000/api/v1
+2025-05-20 00:32:27,238 - chatbot.rag_engine.services.llm_client - INFO - Initialized LLM Client with base URL: http://localhost:8001/api/v1
+2025-05-20 00:32:27,238 - chatbot.rag_engine.core.query_processor - INFO - Initialized QueryProcessor
+2025-05-20 00:32:27,238 - chatbot.rag_engine.core.context_retriever - INFO - Initialized ContextRetriever
+2025-05-20 00:32:27,238 - chatbot.rag_engine.core.prompt_builder - INFO - Initialized PromptBuilder
+2025-05-20 00:32:27,238 - chatbot.rag_engine.core.response_generator - INFO - Initialized ResponseGenerator
+2025-05-20 00:32:27,238 - chatbot.rag_engine.core.engine - INFO - Initialized RAGEngine
+2025-05-20 00:32:27,238 - chatbot.rag_engine.services.rag_service - INFO - Initialized RAGService
+2025-05-20 00:32:50,701 - rag_engine - INFO - Request: OPTIONS /api/v1/query
+2025-05-20 00:32:50,701 - rag_engine - INFO - Request: OPTIONS /api/v1/query
+2025-05-20 00:32:50,702 - rag_engine - INFO - Response: 200 (0.0016s)
+2025-05-20 00:32:50,702 - rag_engine - INFO - Response: 200 (0.0016s)
+2025-05-20 00:32:50,704 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:32:50,704 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:32:50,717 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-20 00:32:50,725 - chatbot.rag_engine.services.embedding_client - ERROR - Failed to connect to Embedding Service: Cannot connect to host localhost:8000 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8000, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8000)]
+2025-05-20 00:32:50,726 - rag_engine - INFO - Response: 503 (0.0215s)
+2025-05-20 00:32:50,726 - rag_engine - INFO - Response: 503 (0.0215s)
+2025-05-20 00:33:08,937 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:33:08,937 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:33:08,941 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-20 00:33:08,945 - chatbot.rag_engine.services.embedding_client - ERROR - Failed to connect to Embedding Service: Cannot connect to host localhost:8000 ssl:default [Multiple exceptions: [Errno 61] Connect call failed ('::1', 8000, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 8000)]
+2025-05-20 00:33:08,946 - rag_engine - INFO - Response: 503 (0.0085s)
+2025-05-20 00:33:08,946 - rag_engine - INFO - Response: 503 (0.0085s)
+2025-05-20 00:34:53,780 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:34:53,780 - rag_engine - INFO - Request: POST /api/v1/query
+2025-05-20 00:34:53,788 - chatbot.rag_engine.services.embedding_client - INFO - Listing collections
+2025-05-20 00:34:53,872 - chatbot.rag_engine.core.engine - INFO - Processing query: What is america choice 5000?
+2025-05-20 00:34:53,872 - chatbot.rag_engine.core.query_processor - INFO - Processing query: What is america choice 5000?
+2025-05-20 00:34:53,873 - chatbot.rag_engine.core.query_processor - INFO - Processed query: what is america choice 5000
+2025-05-20 00:34:53,873 - chatbot.rag_engine.core.context_retriever - INFO - Retrieving context for query: what is america choice 5000
+2025-05-20 00:34:53,873 - chatbot.rag_engine.services.embedding_client - INFO - Querying collection 'insurance_documents' with text: what is america choice 5000
+2025-05-20 00:34:54,979 - chatbot.rag_engine.core.context_retriever - INFO - Retrieved 0 relevant documents
+2025-05-20 00:34:54,979 - chatbot.rag_engine.core.prompt_builder - INFO - Building prompt for query: What is america choice 5000?
+2025-05-20 00:34:54,979 - chatbot.rag_engine.core.response_generator - INFO - Generating response with model: gemini-2.0-flash
+2025-05-20 00:34:54,980 - chatbot.rag_engine.services.llm_client - INFO - Generating text with model: gemini-2.0-flash
+2025-05-20 00:34:57,049 - chatbot.rag_engine.core.response_generator - INFO - Response generated successfully
+2025-05-20 00:34:57,050 - chatbot.rag_engine.core.engine - INFO - Query processing completed successfully
+2025-05-20 00:34:57,052 - rag_engine - INFO - Response: 200 (3.2718s)
+2025-05-20 00:34:57,052 - rag_engine - INFO - Response: 200 (3.2718s)

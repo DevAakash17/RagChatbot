@@ -1,0 +1,797 @@
+2025-05-17 19:14:37.947 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-17 19:14:38.004 | INFO     | logging:callHandlers:1736 - Started server process [42622]
+2025-05-17 19:14:38.005 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-17 19:14:38.005 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-17 19:14:38.313 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-17 19:15:27.583 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-17 19:15:27.685 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-17 19:15:27.690 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-17 19:15:27.690 | INFO     | logging:callHandlers:1736 - Finished server process [42622]
+2025-05-17 19:15:55.883 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-17 19:15:55.910 | INFO     | logging:callHandlers:1736 - Started server process [42749]
+2025-05-17 19:15:55.910 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-17 19:15:55.911 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-17 19:35:44.549 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-17 19:35:55.924 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-18 10:17:10.587 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/health
+2025-05-18 10:17:10.595 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0080s)
+2025-05-18 10:17:10.596 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62273 - "GET /api/v1/health HTTP/1.1" 200
+2025-05-18 10:17:21.959 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/embeddings
+2025-05-18 10:17:21.970 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 2 texts
+2025-05-18 10:17:24.562 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (2.6038s)
+2025-05-18 10:17:24.563 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62287 - "POST /api/v1/embeddings HTTP/1.1" 200
+2025-05-18 10:17:36.044 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 10:17:36.053 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 5 texts in collection 'ai_concepts'
+2025-05-18 10:17:36.053 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 5 texts
+2025-05-18 10:17:36.556 | INFO     | chatbot.embedding_service.vector_db.chroma:create_collection:61 - Created collection 'ai_concepts' with dimension 384
+2025-05-18 10:17:36.605 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:157 - Added 5 vectors to collection 'ai_concepts'
+2025-05-18 10:17:36.606 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.5615s)
+2025-05-18 10:17:36.606 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62305 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-18 10:17:36.913 | INFO     | logging:callHandlers:1736 - 7 changes detected
+2025-05-18 10:17:44.010 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-18 10:17:44.012 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-18 10:17:44.018 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0082s)
+2025-05-18 10:17:44.018 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62316 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-18 10:17:46.944 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-18 10:17:46.954 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 2 texts in collection 'ai_concepts'
+2025-05-18 10:17:46.955 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 2 texts
+2025-05-18 10:17:47.347 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.4032s)
+2025-05-18 10:17:47.348 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62321 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-18 10:19:34.687 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/delete
+2025-05-18 10:19:34.693 | INFO     | chatbot.embedding_service.services.embedding_service:delete_collection:192 - Deleting collection 'ai_concepts'
+2025-05-18 10:19:34.695 | INFO     | chatbot.embedding_service.vector_db.chroma:delete_collection:85 - Deleted collection 'ai_concepts'
+2025-05-18 10:19:34.696 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0091s)
+2025-05-18 10:19:34.696 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62438 - "POST /api/v1/collections/delete HTTP/1.1" 200
+2025-05-18 10:19:35.180 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-18 10:19:36.625 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-18 10:19:36.626 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-18 10:19:36.627 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0014s)
+2025-05-18 10:19:36.627 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62441 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-18 10:35:56.716 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-18 15:17:56.442 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-18 15:17:56.544 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-18 15:17:56.545 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-18 15:17:56.545 | INFO     | logging:callHandlers:1736 - Finished server process [42749]
+2025-05-18 15:21:14.695 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-18 15:21:14.747 | INFO     | logging:callHandlers:1736 - Started server process [88126]
+2025-05-18 15:21:14.748 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-18 15:21:14.748 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-18 15:41:03.367 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-18 15:41:14.729 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-18 17:14:34.136 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/store
+2025-05-18 17:14:34.140 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0041s)
+2025-05-18 17:14:34.140 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58374 - "POST /api/v1/store HTTP/1.1" 404
+2025-05-18 17:15:04.829 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/store
+2025-05-18 17:15:04.830 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0008s)
+2025-05-18 17:15:04.830 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58410 - "POST /api/v1/store HTTP/1.1" 404
+2025-05-18 17:15:05.137 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/store
+2025-05-18 17:15:05.138 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0005s)
+2025-05-18 17:15:05.138 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58412 - "POST /api/v1/store HTTP/1.1" 404
+2025-05-18 17:15:06.691 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/store
+2025-05-18 17:15:06.692 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0005s)
+2025-05-18 17:15:06.692 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58415 - "POST /api/v1/store HTTP/1.1" 404
+2025-05-18 17:15:06.970 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/store
+2025-05-18 17:15:06.971 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0005s)
+2025-05-18 17:15:06.971 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58418 - "POST /api/v1/store HTTP/1.1" 404
+2025-05-18 17:41:46.444 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:41:46.460 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:41:46.460 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:41:47.295 | INFO     | chatbot.embedding_service.vector_db.chroma:create_collection:61 - Created collection 'insurance_documents' with dimension 384
+2025-05-18 17:41:47.297 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-18 17:41:47.298 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.8545s)
+2025-05-18 17:41:47.298 | INFO     | logging:callHandlers:1736 - 127.0.0.1:60306 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:41:47.532 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-18 17:41:47.578 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:41:47.579 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:41:47.579 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:41:47.663 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-18 17:41:47.663 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0854s)
+2025-05-18 17:41:47.663 | INFO     | logging:callHandlers:1736 - 127.0.0.1:60311 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:41:47.960 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:41:47.961 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:41:47.961 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:41:48.113 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-18 17:41:48.114 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1540s)
+2025-05-18 17:41:48.114 | INFO     | logging:callHandlers:1736 - 127.0.0.1:60313 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:41:48.209 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:41:48.210 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 17:41:48.210 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 17:41:48.405 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-18 17:41:48.405 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1962s)
+2025-05-18 17:41:48.406 | INFO     | logging:callHandlers:1736 - 127.0.0.1:60316 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:41:48.696 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:41:48.697 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:41:48.697 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:41:48.783 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-18 17:41:48.784 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0880s)
+2025-05-18 17:41:48.784 | INFO     | logging:callHandlers:1736 - 127.0.0.1:60318 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:51:59.107 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:51:59.109 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:51:59.109 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:51:59.502 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:51:59.502 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3959s)
+2025-05-18 17:51:59.503 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61013 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:51:59.919 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:51:59.927 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:51:59.927 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:52:00.055 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:00.056 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1371s)
+2025-05-18 17:52:00.057 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61015 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:00.686 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:00.690 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:52:00.690 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:52:00.798 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:00.798 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1125s)
+2025-05-18 17:52:00.798 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61018 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:00.892 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:00.893 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 17:52:00.893 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 17:52:00.933 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:00.934 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0415s)
+2025-05-18 17:52:00.934 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61020 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:01.215 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:01.216 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:52:01.216 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:52:01.305 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:01.305 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0907s)
+2025-05-18 17:52:01.306 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61022 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:25.378 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:25.380 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:52:25.380 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:52:25.762 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:25.764 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3851s)
+2025-05-18 17:52:25.764 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61047 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:26.054 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:26.058 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 17:52:26.058 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 17:52:26.144 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:26.145 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0907s)
+2025-05-18 17:52:26.145 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61051 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:26.430 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:26.431 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:52:26.431 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:52:26.533 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:26.533 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1037s)
+2025-05-18 17:52:26.534 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61053 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:26.541 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:26.542 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 17:52:26.542 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 17:52:26.582 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:26.582 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0412s)
+2025-05-18 17:52:26.582 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61055 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 17:52:26.879 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 17:52:26.880 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 17:52:26.880 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 17:52:26.964 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 17:52:26.964 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0852s)
+2025-05-18 17:52:26.964 | INFO     | logging:callHandlers:1736 - 127.0.0.1:61058 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:04:48.487 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:04:48.492 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:04:48.493 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:06:24.961 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-18 18:06:24.974 | INFO     | logging:callHandlers:1736 - Started server process [920]
+2025-05-18 18:06:24.974 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-18 18:06:24.974 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-18 18:06:34.769 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:06:34.778 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:06:34.779 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:06:55.289 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:06:55.291 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (20.5222s)
+2025-05-18 18:06:55.292 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62056 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:06:55.586 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:06:55.587 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:06:55.587 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:06:55.715 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:06:55.715 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1294s)
+2025-05-18 18:06:55.715 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62081 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:06:56.014 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:06:56.015 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:06:56.015 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:06:56.133 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:06:56.133 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1194s)
+2025-05-18 18:06:56.133 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62085 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:06:56.233 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:06:56.234 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 18:06:56.234 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 18:06:56.304 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:06:56.304 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0709s)
+2025-05-18 18:06:56.304 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62087 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:06:56.585 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:06:56.586 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:06:56.586 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:06:56.673 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:06:56.673 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0878s)
+2025-05-18 18:06:56.673 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62089 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:07:45.288 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:07:45.292 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:07:45.292 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:08:08.420 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:08:08.422 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (23.1336s)
+2025-05-18 18:08:08.422 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62211 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:08:08.720 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:08:08.721 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:08:08.721 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:08:08.865 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:08:08.866 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1458s)
+2025-05-18 18:08:08.866 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62238 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:08:09.153 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:08:09.154 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:08:09.154 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:08:09.252 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:08:09.253 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0997s)
+2025-05-18 18:08:09.253 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62240 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:08:09.261 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:08:09.262 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 18:08:09.262 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 18:08:09.302 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:08:09.302 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0409s)
+2025-05-18 18:08:09.302 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62242 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:08:09.598 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:08:09.599 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:08:09.599 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:08:09.685 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:08:09.686 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0876s)
+2025-05-18 18:08:09.686 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62245 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:30.016 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:30.022 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:09:30.022 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:09:30.529 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:09:30.535 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.5193s)
+2025-05-18 18:09:30.536 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62349 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:31.183 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:31.186 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:09:31.186 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:09:31.302 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:09:31.319 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1366s)
+2025-05-18 18:09:31.320 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62352 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:31.695 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:31.697 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:09:31.697 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:09:31.796 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:09:31.796 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1007s)
+2025-05-18 18:09:31.796 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62354 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:31.892 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:31.893 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-18 18:09:31.894 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-18 18:09:31.939 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:09:31.940 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0474s)
+2025-05-18 18:09:31.940 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62356 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:32.222 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:32.223 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-18 18:09:32.224 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-18 18:09:32.316 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:09:32.316 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0944s)
+2025-05-18 18:09:32.317 | INFO     | logging:callHandlers:1736 - 127.0.0.1:62360 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-18 18:09:44.977 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:09:44.979 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-18 18:09:44.979 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-18 18:11:28.062 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-18 18:11:28.071 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (103.0942s)
+2025-05-18 18:11:28.074 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-18 18:11:28.076 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:20:55.368 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:20:55.401 | INFO     | logging:callHandlers:1736 - Started server process [67064]
+2025-05-19 08:20:55.401 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 08:20:55.402 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 08:21:25.750 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:22:09.536 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:22:09.539 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:22:10.093 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-19 08:22:10.094 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (44.3445s)
+2025-05-19 08:22:10.094 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52907 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:22:10.387 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:22:10.389 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:22:10.390 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:22:10.473 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-19 08:22:10.474 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0870s)
+2025-05-19 08:22:10.474 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52967 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:22:10.790 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:22:10.791 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:22:10.791 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:22:11.132 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-19 08:22:11.132 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3424s)
+2025-05-19 08:22:11.133 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52969 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:22:11.242 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:22:11.243 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-19 08:22:11.243 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-19 08:22:11.316 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-19 08:22:11.316 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0740s)
+2025-05-19 08:22:11.316 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52971 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:22:11.610 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:22:11.611 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:22:11.611 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:22:11.704 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata to be a non-empty dict, got 0 metadata attributes in add.
+2025-05-19 08:22:11.705 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0949s)
+2025-05-19 08:22:11.705 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52975 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:26:25.433 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:26:25.436 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:26:25.436 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:26:25.820 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:26:25.820 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3875s)
+2025-05-19 08:26:25.821 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53334 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:26:26.127 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:26:26.129 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:26:26.129 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:26:26.217 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:26:26.217 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0900s)
+2025-05-19 08:26:26.218 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53338 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:26:26.538 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:26:26.539 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:26:26.540 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:26:26.637 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:26:26.637 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0990s)
+2025-05-19 08:26:26.637 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53340 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:26:26.782 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:26:26.784 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-19 08:26:26.784 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-19 08:26:26.833 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:26:26.834 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0519s)
+2025-05-19 08:26:26.834 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53343 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:26:27.135 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:26:27.136 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:26:27.136 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:26:27.226 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:26:27.227 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0924s)
+2025-05-19 08:26:27.228 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53347 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:27:58.137 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:27:58.140 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:27:58.140 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:27:58.563 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:27:58.564 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.4267s)
+2025-05-19 08:27:58.564 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53460 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:27:58.850 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:27:58.851 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:27:58.852 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:27:58.959 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:27:58.960 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1103s)
+2025-05-19 08:27:58.960 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53462 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:27:59.264 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:27:59.265 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:27:59.265 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:27:59.365 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:27:59.366 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1015s)
+2025-05-19 08:27:59.366 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53464 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:27:59.460 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:27:59.461 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-19 08:27:59.461 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-19 08:27:59.505 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:27:59.506 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0464s)
+2025-05-19 08:27:59.506 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53466 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:27:59.787 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:27:59.788 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:27:59.788 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:27:59.880 | ERROR    | chatbot.embedding_service.vector_db.chroma:add_vectors:161 - Failed to add vectors to collection 'insurance_documents': Expected metadata value to be a str, int, float, bool, or None, got {'max_chunk_size': 1500, 'min_chunk_size': 500} which is a dict in add.
+2025-05-19 08:27:59.880 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0934s)
+2025-05-19 08:27:59.881 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53469 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-19 08:40:44.753 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 08:40:55.347 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 08:46:25.403 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-19 08:46:25.507 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-19 08:46:25.507 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-19 08:46:25.508 | INFO     | logging:callHandlers:1736 - Finished server process [67064]
+2025-05-19 08:47:00.599 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:47:00.629 | INFO     | logging:callHandlers:1736 - Started server process [68958]
+2025-05-19 08:47:00.629 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 08:47:00.630 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 08:47:25.742 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:47:25.756 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:47:25.757 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:47:55.966 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-19 08:47:55.993 | INFO     | logging:callHandlers:1736 - 7 changes detected
+2025-05-19 08:48:37.371 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (71.6297s)
+2025-05-19 08:48:37.374 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:48:37.378 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:48:37.378 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:48:37.806 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-19 08:48:37.807 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.4324s)
+2025-05-19 08:48:37.807 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54895 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:48:38.121 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:48:38.123 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:48:38.123 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:48:38.216 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:48:38.257 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-19 08:48:38.258 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1363s)
+2025-05-19 08:48:38.258 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54909 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:48:38.370 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:48:38.371 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-19 08:48:38.371 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-19 08:48:38.443 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 6 vectors to collection 'insurance_documents'
+2025-05-19 08:48:38.444 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.0735s)
+2025-05-19 08:48:38.444 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54911 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:48:38.572 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:48:38.730 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:48:38.731 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:48:38.731 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:48:38.831 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-19 08:48:38.832 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1018s)
+2025-05-19 08:48:38.832 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54913 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:48:38.931 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:54:47.567 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-19 08:54:47.672 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-19 08:54:47.674 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-19 08:54:47.675 | INFO     | logging:callHandlers:1736 - Finished server process [68958]
+2025-05-19 08:56:22.653 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:56:22.672 | INFO     | logging:callHandlers:1736 - Started server process [69724]
+2025-05-19 08:56:22.672 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 08:56:22.672 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 08:56:28.968 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:56:28.973 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:56:28.973 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:56:29.241 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-19 08:56:29.242 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.2740s)
+2025-05-19 08:56:29.242 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55455 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:56:29.339 | INFO     | logging:callHandlers:1736 - 6 changes detected
+2025-05-19 08:57:22.858 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:57:22.862 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-19 08:57:22.862 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-19 08:57:23.262 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-19 08:57:23.263 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.4049s)
+2025-05-19 08:57:23.263 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55513 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:57:23.572 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:57:23.573 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:57:23.573 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:57:23.694 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:57:23.709 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-19 08:57:23.710 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1383s)
+2025-05-19 08:57:23.710 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55515 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:57:23.808 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:57:23.809 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-19 08:57:23.809 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-19 08:57:23.887 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 6 vectors to collection 'insurance_documents'
+2025-05-19 08:57:23.888 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.0797s)
+2025-05-19 08:57:23.888 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55517 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:57:24.053 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 08:57:24.181 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-19 08:57:24.182 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-19 08:57:24.182 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-19 08:57:24.287 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-19 08:57:24.287 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1063s)
+2025-05-19 08:57:24.287 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55519 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-19 08:57:24.408 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 09:16:11.579 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 09:16:22.623 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 09:31:46.805 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-19 09:31:46.908 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-19 09:31:46.909 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-19 09:31:46.909 | INFO     | logging:callHandlers:1736 - Finished server process [69724]
+2025-05-19 09:33:54.842 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 09:33:54.879 | INFO     | logging:callHandlers:1736 - Started server process [83136]
+2025-05-19 09:33:54.879 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 09:33:54.879 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 09:33:58.291 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /
+2025-05-19 09:33:58.292 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0014s)
+2025-05-19 09:33:58.293 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58716 - "GET / HTTP/1.1" 200
+2025-05-19 09:33:58.365 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /favicon.ico
+2025-05-19 09:33:58.366 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0009s)
+2025-05-19 09:33:58.367 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58716 - "GET /favicon.ico HTTP/1.1" 404
+2025-05-19 09:34:03.615 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /docs
+2025-05-19 09:34:03.617 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0017s)
+2025-05-19 09:34:03.617 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58717 - "GET /docs HTTP/1.1" 200
+2025-05-19 09:34:06.079 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /openapi.json
+2025-05-19 09:34:06.137 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0581s)
+2025-05-19 09:34:06.137 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58717 - "GET /openapi.json HTTP/1.1" 200
+2025-05-19 09:35:32.639 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 09:35:32.646 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 09:35:32.692 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0533s)
+2025-05-19 09:35:32.692 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58812 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 09:35:32.784 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-19 09:35:35.768 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 09:35:35.771 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 09:35:35.775 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0070s)
+2025-05-19 09:35:35.776 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58812 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 09:35:45.863 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 09:35:45.866 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 09:35:45.870 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0077s)
+2025-05-19 09:35:45.871 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58841 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 09:36:30.435 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 09:36:33.583 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 09:37:32.303 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (61.8676s)
+2025-05-19 09:37:32.305 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58892 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 09:53:44.401 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 09:53:54.864 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 15:20:47.142 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:20:47.149 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:20:47.182 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0397s)
+2025-05-19 15:20:47.182 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50196 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:21:14.727 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:21:14.729 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:21:14.732 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0057s)
+2025-05-19 15:21:14.733 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50233 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:21:14.737 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/query
+2025-05-19 15:21:14.738 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0012s)
+2025-05-19 15:21:14.738 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50235 - "POST /api/v1/query HTTP/1.1" 404
+2025-05-19 15:26:58.921 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-19 15:27:01.610 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 15:29:26.255 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 15:29:26.301 | INFO     | logging:callHandlers:1736 - Started server process [23418]
+2025-05-19 15:29:26.301 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 15:29:26.301 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 15:29:40.478 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:29:40.481 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:29:40.609 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-19 15:29:44.154 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (3.6763s)
+2025-05-19 15:29:44.155 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50791 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:29:44.161 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/query
+2025-05-19 15:29:44.162 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0010s)
+2025-05-19 15:29:44.162 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50796 - "POST /api/v1/query HTTP/1.1" 404
+2025-05-19 15:36:13.934 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:36:13.936 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:36:13.939 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0054s)
+2025-05-19 15:36:13.939 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51219 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:37:23.061 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/query
+2025-05-19 15:37:23.064 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0026s)
+2025-05-19 15:37:23.064 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51297 - "POST /api/v1/query HTTP/1.1" 404
+2025-05-19 15:37:58.760 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:37:58.762 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:37:58.766 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0053s)
+2025-05-19 15:37:58.766 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51340 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:38:21.387 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/query
+2025-05-19 15:38:21.388 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0011s)
+2025-05-19 15:38:21.389 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51366 - "POST /api/v1/query HTTP/1.1" 404
+2025-05-19 15:38:45.357 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:38:45.360 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:38:45.363 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0057s)
+2025-05-19 15:38:45.364 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51395 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:38:52.730 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/query
+2025-05-19 15:38:52.731 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0010s)
+2025-05-19 15:38:52.731 | INFO     | logging:callHandlers:1736 - 127.0.0.1:51405 - "POST /api/v1/query HTTP/1.1" 404
+2025-05-19 15:49:15.356 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 15:49:26.298 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 15:54:25.888 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-19 15:54:25.993 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-19 15:54:25.996 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-19 15:54:25.997 | INFO     | logging:callHandlers:1736 - Finished server process [23418]
+2025-05-19 15:54:55.510 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 15:54:55.549 | INFO     | logging:callHandlers:1736 - Started server process [26302]
+2025-05-19 15:54:55.549 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 15:54:55.549 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 15:55:02.349 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 15:55:02.351 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 15:55:02.376 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0280s)
+2025-05-19 15:55:02.377 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52455 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 15:55:02.444 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-19 15:55:09.720 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-19 15:55:09.729 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-19 15:55:09.730 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-19 15:55:11.065 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (1.3446s)
+2025-05-19 15:55:11.065 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52464 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-19 16:14:44.537 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 16:14:55.518 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-19 16:26:27.927 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 16:26:27.931 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 16:26:27.936 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0092s)
+2025-05-19 16:26:27.937 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54560 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 16:26:27.941 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-19 16:26:27.943 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-19 16:26:27.943 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-19 16:26:28.171 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.2294s)
+2025-05-19 16:26:28.171 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54562 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-19 23:49:42.498 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-19 23:49:42.534 | INFO     | logging:callHandlers:1736 - Started server process [7950]
+2025-05-19 23:49:42.534 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-19 23:49:42.535 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-19 23:50:21.472 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 23:50:21.474 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 23:50:21.511 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0394s)
+2025-05-19 23:50:21.512 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58357 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 23:50:21.516 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-19 23:50:21.520 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-19 23:50:21.521 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-19 23:50:21.604 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-19 23:50:22.006 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.4903s)
+2025-05-19 23:50:22.007 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58359 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-19 23:50:52.472 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 23:50:52.474 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 23:50:52.478 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0065s)
+2025-05-19 23:50:52.479 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58526 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 23:50:52.484 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-19 23:50:52.486 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-19 23:50:52.487 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-19 23:50:52.688 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.2041s)
+2025-05-19 23:50:52.688 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58528 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-19 23:51:19.085 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-19 23:51:19.087 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-19 23:51:19.091 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0060s)
+2025-05-19 23:51:19.091 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58666 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-19 23:51:19.097 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-19 23:51:19.098 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-19 23:51:19.099 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-19 23:51:19.165 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0674s)
+2025-05-19 23:51:19.165 | INFO     | logging:callHandlers:1736 - 127.0.0.1:58668 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-20 00:08:34.695 | INFO     | logging:callHandlers:1736 - 12 changes detected
+2025-05-20 00:09:29.042 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-20 00:09:42.522 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-20 00:15:08.303 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:08.314 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 2 texts in collection 'insurance_documents'
+2025-05-20 00:15:08.314 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 2 texts
+2025-05-20 00:15:08.648 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:08.650 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3467s)
+2025-05-20 00:15:08.650 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49773 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:15:08.954 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:08.955 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:15:08.955 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:15:09.077 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:09.077 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1229s)
+2025-05-20 00:15:09.077 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49779 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:15:09.394 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:09.395 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:15:09.395 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:15:09.477 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:09.478 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0833s)
+2025-05-20 00:15:09.478 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49783 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:15:09.778 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:09.779 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:15:09.779 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:15:09.897 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:09.897 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1193s)
+2025-05-20 00:15:09.897 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49785 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:15:10.062 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:10.063 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-20 00:15:10.064 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-20 00:15:10.137 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:10.137 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0754s)
+2025-05-20 00:15:10.137 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49791 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:15:10.456 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:15:10.457 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:15:10.457 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:15:10.543 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:15:10.544 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0880s)
+2025-05-20 00:15:10.544 | INFO     | logging:callHandlers:1736 - 127.0.0.1:49793 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:14.243 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:14.246 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 2 texts in collection 'insurance_documents'
+2025-05-20 00:17:14.246 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 2 texts
+2025-05-20 00:17:14.551 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:14.552 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3093s)
+2025-05-20 00:17:14.552 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50506 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:14.856 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:14.857 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:17:14.857 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:17:14.941 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:14.942 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0860s)
+2025-05-20 00:17:14.942 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50512 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:15.237 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:15.238 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:17:15.238 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:17:15.317 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:15.317 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0801s)
+2025-05-20 00:17:15.317 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50516 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:15.647 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:15.648 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:17:15.648 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:17:15.747 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:15.748 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.1006s)
+2025-05-20 00:17:15.748 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50522 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:15.758 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:15.759 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-20 00:17:15.759 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-20 00:17:15.797 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:15.797 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0395s)
+2025-05-20 00:17:15.797 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50524 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:17:16.126 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:17:16.127 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:17:16.127 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:17:16.214 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:17:16.215 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.0884s)
+2025-05-20 00:17:16.215 | INFO     | logging:callHandlers:1736 - 127.0.0.1:50527 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:25:01.076 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:25:01.084 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 2 texts in collection 'insurance_documents'
+2025-05-20 00:25:01.084 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 2 texts
+2025-05-20 00:25:01.434 | ERROR    | chatbot.embedding_service.vector_db.chroma:collection_exists:261 - Failed to check if collection 'insurance_documents' exists: Database error: error returned from database: (code: 14) unable to open database file
+2025-05-20 00:25:01.439 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (0.3634s)
+2025-05-20 00:25:01.439 | INFO     | logging:callHandlers:1736 - 127.0.0.1:52879 - "POST /api/v1/collections/store HTTP/1.1" 500
+2025-05-20 00:26:30.375 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-20 00:26:30.478 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-20 00:26:30.479 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-20 00:26:30.479 | INFO     | logging:callHandlers:1736 - Finished server process [7950]
+2025-05-20 00:27:01.462 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 00:27:01.502 | INFO     | logging:callHandlers:1736 - Started server process [10860]
+2025-05-20 00:27:01.503 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-20 00:27:01.503 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-20 00:27:52.409 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:27:52.426 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:27:52.426 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:27:53.001 | INFO     | chatbot.embedding_service.vector_db.chroma:create_collection:61 - Created collection 'insurance_documents' with dimension 384
+2025-05-20 00:27:53.039 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-20 00:27:53.040 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.6322s)
+2025-05-20 00:27:53.041 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53764 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-20 00:27:53.081 | INFO     | logging:callHandlers:1736 - 7 changes detected
+2025-05-20 00:28:57.901 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:28:57.912 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 13 texts in collection 'insurance_documents'
+2025-05-20 00:28:57.912 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 13 texts
+2025-05-20 00:28:58.320 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 13 vectors to collection 'insurance_documents'
+2025-05-20 00:28:58.321 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.4207s)
+2025-05-20 00:28:58.322 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54109 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-20 00:28:58.630 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 00:29:04.283 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:29:04.284 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:29:04.284 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:29:04.443 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-20 00:29:04.443 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1607s)
+2025-05-20 00:29:04.444 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54143 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-20 00:29:04.459 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:29:04.460 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 6 texts in collection 'insurance_documents'
+2025-05-20 00:29:04.460 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 6 texts
+2025-05-20 00:29:04.537 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 6 vectors to collection 'insurance_documents'
+2025-05-20 00:29:04.538 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.0789s)
+2025-05-20 00:29:04.538 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54145 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-20 00:29:04.545 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 00:29:04.848 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/store
+2025-05-20 00:29:04.849 | INFO     | chatbot.embedding_service.services.embedding_service:store_embeddings:116 - Storing embeddings for 14 texts in collection 'insurance_documents'
+2025-05-20 00:29:04.849 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 14 texts
+2025-05-20 00:29:04.958 | INFO     | chatbot.embedding_service.vector_db.chroma:add_vectors:153 - Added 14 vectors to collection 'insurance_documents'
+2025-05-20 00:29:04.958 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 201 (0.1108s)
+2025-05-20 00:29:04.958 | INFO     | logging:callHandlers:1736 - 127.0.0.1:54151 - "POST /api/v1/collections/store HTTP/1.1" 201
+2025-05-20 00:29:05.062 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 00:31:08.929 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-20 00:31:09.034 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-20 00:31:09.037 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-20 00:31:09.039 | INFO     | logging:callHandlers:1736 - Finished server process [10860]
+2025-05-20 00:34:34.670 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 00:34:34.737 | INFO     | logging:callHandlers:1736 - Started server process [11940]
+2025-05-20 00:34:34.737 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-20 00:34:34.738 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-20 00:34:53.818 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-20 00:34:53.822 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:180 - Listing collections
+2025-05-20 00:34:53.871 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0532s)
+2025-05-20 00:34:53.871 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56018 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-20 00:34:53.875 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-20 00:34:53.881 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-20 00:34:53.881 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-20 00:34:53.910 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-20 00:34:54.977 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (1.1025s)
+2025-05-20 00:34:54.978 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56020 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-20 02:29:18.770 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-20 02:29:37.679 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-20 10:57:47.811 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-20 10:57:47.921 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-20 10:57:47.929 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-20 10:57:47.930 | INFO     | logging:callHandlers:1736 - Finished server process [11940]
+2025-05-20 19:02:20.315 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-20 19:02:20.406 | INFO     | logging:callHandlers:1736 - Started server process [92796]
+2025-05-20 19:02:20.406 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-20 19:02:20.407 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-20 19:02:22.635 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /
+2025-05-20 19:02:22.638 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0029s)
+2025-05-20 19:02:22.639 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55100 - "GET / HTTP/1.1" 200
+2025-05-20 19:02:22.642 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /
+2025-05-20 19:02:22.644 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0020s)
+2025-05-20 19:02:22.650 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55101 - "GET / HTTP/1.1" 200
+2025-05-20 19:02:22.734 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /favicon.ico
+2025-05-20 19:02:22.735 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 404 (0.0006s)
+2025-05-20 19:02:22.735 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55101 - "GET /favicon.ico HTTP/1.1" 404
+2025-05-20 19:02:32.370 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /docs
+2025-05-20 19:02:32.372 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0021s)
+2025-05-20 19:02:32.373 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55111 - "GET /docs HTTP/1.1" 200
+2025-05-20 19:02:34.865 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /openapi.json
+2025-05-20 19:02:34.912 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0473s)
+2025-05-20 19:02:34.912 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55111 - "GET /openapi.json HTTP/1.1" 200
+2025-05-20 19:03:17.048 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-20 19:03:17.063 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-20 19:03:17.070 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-20 19:03:17.070 | INFO     | chatbot.embedding_service.services.embedding_service:_create_embedding_model:46 - Creating embedding model: string
+2025-05-20 19:03:17.070 | INFO     | chatbot.embedding_service.embeddings.sentence_transformers:__init__:25 - Loading Sentence Transformers model: string
+2025-05-20 19:03:17.072 | INFO     | logging:callHandlers:1736 - Use pytorch device_name: mps
+2025-05-20 19:03:17.072 | INFO     | logging:callHandlers:1736 - Load pretrained SentenceTransformer: string
+2025-05-20 19:03:17.309 | WARNING  | logging:callHandlers:1736 - No sentence-transformers model found with name sentence-transformers/string. Creating a new one with mean pooling.
+2025-05-20 19:03:18.843 | ERROR    | chatbot.embedding_service.embeddings.sentence_transformers:__init__:37 - Failed to initialize Sentence Transformers model: sentence-transformers/string is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-20 19:03:18.845 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 500 (1.7966s)
+2025-05-20 19:03:18.845 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55112 - "POST /api/v1/collections/query HTTP/1.1" 500
+2025-05-20 19:06:20.778 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-20 19:06:20.792 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-20 19:06:20.794 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-20 19:06:21.615 | INFO     | logging:callHandlers:1736 - 4 changes detected
+2025-05-20 19:07:17.012 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (56.2363s)
+2025-05-20 19:07:17.013 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55389 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-20 19:13:40.206 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-20 19:13:40.215 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-20 19:13:40.218 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-20 19:13:47.491 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (7.2849s)
+2025-05-20 19:13:47.492 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55643 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-20 19:15:25.461 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-20 19:15:25.467 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:153 - Querying 1 texts in collection 'insurance_documents'
+2025-05-20 19:15:25.470 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:83 - Generating embeddings for 1 texts
+2025-05-20 19:15:27.525 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (2.0640s)
+2025-05-20 19:15:27.526 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55718 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-20 19:22:07.156 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-20 19:32:20.370 | INFO     | logging:callHandlers:1736 - 1 change detected
