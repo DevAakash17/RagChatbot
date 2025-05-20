@@ -29,3 +29,4 @@ next-env.d.ts
 __pycache__/
 untitled.iml
 package-lock.json
+*.log

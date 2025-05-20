@@ -32,8 +32,8 @@ class Settings(BaseSettings):
     DEFAULT_CHUNKING_STRATEGY: str = "fixed_size"  # Options: "fixed_size", "semantic"
 
     # Embedding settings
-    DEFAULT_EMBEDDING_MODEL: str = "all-MiniLM-L6-v2"
-    DEFAULT_COLLECTION_NAME: str = "documents"
+    DEFAULT_EMBEDDING_MODEL: str = "BAAI/bge-small-en-v1.5"
+    DEFAULT_COLLECTION_NAME: str = "insurance_documents"
 
     # Performance settings
     BATCH_SIZE: int = 32
