@@ -301,32 +301,42 @@ class ChunkerService:
                 raise ChunkingError(f"Unsupported document type: {content_type}")
 
     async def _extract_text_from_pdf(self, storage: Any, document_path: str) -> str:
-        """Extract text from a PDF document.
+        """Extract text from a PDF document using PyMuPDF (fitz).
 
         Args:
             storage: Storage adapter
             document_path: Path to the document
 
         Returns:
-            Extracted text
+            Extracted text with layout preservation
         """
         try:
-            import PyPDF2
+            import fitz  # PyMuPDF
 
             # Get document data
             data = await storage.get_object(document_path)
 
-            # Extract text
-            text = ""
-            pdf_reader = PyPDF2.PdfReader(data)
+            # Save to temporary file
+            temp_path = f"/tmp/{os.path.basename(document_path)}"
+            with open(temp_path, "wb") as f:
+                f.write(data.getvalue())
 
-            for page_num in range(len(pdf_reader.pages)):
-                page = pdf_reader.pages[page_num]
-                text += page.extract_text() + "\n\n"
+            # Extract text with layout preservation
+            text = ""
+            doc = fitz.open(temp_path)
+
+            for page_num in range(len(doc)):
+                page = doc[page_num]
+                # Extract text with layout preservation
+                page_text = page.get_text("text")
+                text += page_text + "\n\n"
+
+            # Clean up
+            os.remove(temp_path)
 
             return text
         except ImportError:
-            raise ChunkingError("PyPDF2 is required for PDF extraction. Install with 'pip install PyPDF2'")
+            raise ChunkingError("PyMuPDF is required for PDF extraction. Install with 'pip install pymupdf'")
         except Exception as e:
             raise ChunkingError(f"Failed to extract text from PDF: {str(e)}")
 

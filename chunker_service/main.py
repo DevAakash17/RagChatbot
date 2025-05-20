@@ -103,7 +103,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "chatbot.chunker_service.main:app",
         host="0.0.0.0",
-        port=8002,  # Use a different port than embedding_service and llm_service
+        port=8004,
         reload=True,
         log_level="info"
     )
