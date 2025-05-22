@@ -45,8 +45,6 @@ RUN npm run build
 # Expose ports
 # Frontend
 EXPOSE 3000
-# Backend services
-EXPOSE 8000 8001 8002
 
 # Make the startup script executable
 RUN chmod +x /chatbot/start.sh

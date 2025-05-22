@@ -20,6 +20,9 @@ cd /chatbot && python -m uvicorn chunker_service.main:app --host 0.0.0.0 --port 
 echo "Starting RAG Engine..."
 cd /chatbot && python -m uvicorn rag_engine.main:app --host 0.0.0.0 --port 8003 --reload &
 
+echo "Starting Authentication Service..."
+cd /chatbot/backend && python -m uvicorn main:app --host 0.0.0.0 --port 8005 --reload &
+
 # Wait for backend services to start
 echo "Waiting for backend services to start..."
 sleep 10
