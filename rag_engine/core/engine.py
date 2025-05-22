@@ -18,14 +18,14 @@ logger = setup_logging(__name__)
 
 class RAGEngine:
     """Main RAG Engine class."""
-    
+
     def __init__(
         self,
         embedding_client: Optional[EmbeddingClient] = None,
         llm_client: Optional[LLMClient] = None
     ):
         """Initialize the RAG Engine.
-        
+
         Args:
             embedding_client: Optional embedding client
             llm_client: Optional LLM client
@@ -33,15 +33,15 @@ class RAGEngine:
         # Initialize clients
         self.embedding_client = embedding_client or EmbeddingClient()
         self.llm_client = llm_client or LLMClient()
-        
+
         # Initialize components
         self.query_processor = QueryProcessor()
         self.context_retriever = ContextRetriever(self.embedding_client)
         self.prompt_builder = PromptBuilder()
         self.response_generator = ResponseGenerator(self.llm_client)
-        
+
         logger.info("Initialized RAGEngine")
-    
+
     async def process(
         self,
         query: str,
@@ -49,10 +49,11 @@ class RAGEngine:
         llm_model: Optional[str] = None,
         embedding_model: Optional[str] = None,
         llm_options: Optional[Dict[str, Any]] = None,
-        top_k: Optional[int] = None
+        top_k: Optional[int] = None,
+        prev_queries: Optional[List[str]] = None
     ) -> Dict[str, Any]:
         """Process a query through the RAG pipeline.
-        
+
         Args:
             query: User query
             collection_name: Name of the collection to query
@@ -60,15 +61,16 @@ class RAGEngine:
             embedding_model: Optional embedding model to use
             llm_options: Optional LLM generation options
             top_k: Number of context documents to retrieve
-            
+            prev_queries: Optional list of previous queries for context
+
         Returns:
             Generated response and metadata
         """
         logger.info(f"Processing query: {query}")
-        
+
         # Process the query
         processed_query = self.query_processor.process_query(query)
-        
+
         # Retrieve context
         context_documents = await self.context_retriever.retrieve_context(
             query=processed_query,
@@ -76,22 +78,23 @@ class RAGEngine:
             top_k=top_k,
             model=embedding_model
         )
-        
+
         # Build prompt
         prompt = self.prompt_builder.build_prompt(
             query=query,  # Use original query in the prompt
-            context_documents=context_documents
+            context_documents=context_documents,
+            prev_queries=prev_queries or []
         )
-        
+
         # Generate response
         response = await self.response_generator.generate_response(
             prompt=prompt,
             model=llm_model,
             options=llm_options
         )
-        
+
         # Add context documents to the response
         response["context_documents"] = context_documents
-        
+
         logger.info("Query processing completed successfully")
         return response

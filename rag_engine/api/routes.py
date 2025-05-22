@@ -31,7 +31,7 @@ rag_service = RAGService()
 
 def get_rag_service() -> RAGService:
     """Get the RAG service instance.
-    
+
     Returns:
         RAG service instance
     """
@@ -57,9 +57,10 @@ async def query(
             llm_model=request.llm_model,
             embedding_model=request.embedding_model,
             llm_options=request.llm_options,
-            top_k=request.top_k
+            top_k=request.top_k,
+            prev_queries=request.prev_queries
         )
-        
+
         # Convert context documents to the response schema
         context_documents = [
             ContextDocument(
@@ -70,7 +71,7 @@ async def query(
             )
             for doc in result["context_documents"]
         ]
-        
+
         return QueryResponse(
             text=result["text"],
             model=result["model"],
@@ -107,7 +108,7 @@ async def store_documents(
             metadata=request.metadata,
             model=request.model
         )
-        
+
         return StoreDocumentsResponse(
             ids=result["ids"],
             collection_name=result["collection_name"],
@@ -136,7 +137,7 @@ async def list_collections(
     """List collections."""
     try:
         collections = await service.list_collections()
-        
+
         # Convert to response schema
         collection_infos = [
             CollectionInfo(
@@ -146,7 +147,7 @@ async def list_collections(
             )
             for collection in collections
         ]
-        
+
         return ListCollectionsResponse(collections=collection_infos)
     except RAGEngineError as e:
         raise e.to_http_exception()
@@ -171,7 +172,7 @@ async def health_check(
     """Health check."""
     try:
         health_info = await service.get_health_info()
-        
+
         return HealthResponse(**health_info)
     except Exception as e:
         logger.exception(f"Unexpected error: {str(e)}")

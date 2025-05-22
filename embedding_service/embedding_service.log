@@ -795,3 +795,94 @@ If this is a private repository, make sure to pass a token having permission to 
 2025-05-20 19:15:27.526 | INFO     | logging:callHandlers:1736 - 127.0.0.1:55718 - "POST /api/v1/collections/query HTTP/1.1" 200
 2025-05-20 19:22:07.156 | INFO     | logging:callHandlers:1736 - 1 change detected
 2025-05-20 19:32:20.370 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-21 16:51:17.822 | INFO     | logging:callHandlers:1736 - 2 changes detected
+2025-05-21 16:51:17.886 | INFO     | logging:callHandlers:1736 - Started server process [87423]
+2025-05-21 16:51:17.886 | INFO     | logging:callHandlers:1736 - Waiting for application startup.
+2025-05-21 16:51:17.887 | INFO     | logging:callHandlers:1736 - Application startup complete.
+2025-05-21 17:01:43.790 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:01:43.794 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:01:43.865 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0754s)
+2025-05-21 17:01:43.865 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53027 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:01:43.869 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:01:43.875 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:01:43.876 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:01:44.414 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.5448s)
+2025-05-21 17:01:44.414 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53029 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:02:23.266 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:02:23.270 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:02:23.281 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0146s)
+2025-05-21 17:02:23.281 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53078 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:02:23.285 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:02:23.286 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:02:23.287 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:02:23.623 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.3387s)
+2025-05-21 17:02:23.624 | INFO     | logging:callHandlers:1736 - 127.0.0.1:53080 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:11:05.797 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-21 17:21:17.885 | INFO     | logging:callHandlers:1736 - 1 change detected
+2025-05-21 17:41:51.307 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:41:51.315 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:41:51.351 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0451s)
+2025-05-21 17:41:51.352 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56531 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:41:51.356 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:41:51.358 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:41:51.359 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:41:52.626 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (1.2698s)
+2025-05-21 17:41:52.626 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56533 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:42:39.133 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:42:39.139 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:42:39.146 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0147s)
+2025-05-21 17:42:39.147 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56589 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:42:39.151 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:42:39.158 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:42:39.159 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:42:39.546 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.3944s)
+2025-05-21 17:42:39.546 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56591 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:43:39.650 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:43:39.654 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:43:39.667 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0167s)
+2025-05-21 17:43:39.667 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56647 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:43:39.671 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:43:39.673 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:43:39.674 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:43:39.984 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.3122s)
+2025-05-21 17:43:39.984 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56649 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:43:57.653 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:43:57.656 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:43:57.660 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0070s)
+2025-05-21 17:43:57.660 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56665 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:43:57.665 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:43:57.667 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:43:57.669 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:43:57.985 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.3193s)
+2025-05-21 17:43:57.986 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56667 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:44:39.301 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:44:39.303 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:44:39.305 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0041s)
+2025-05-21 17:44:39.305 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56720 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:44:39.309 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:44:39.312 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:44:39.314 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:44:39.713 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.4043s)
+2025-05-21 17:44:39.714 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56722 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:45:05.824 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:45:05.827 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:45:05.833 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0094s)
+2025-05-21 17:45:05.834 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56741 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:45:05.839 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:45:05.840 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:45:05.842 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:45:06.136 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.2970s)
+2025-05-21 17:45:06.138 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56743 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:45:22.770 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: GET /api/v1/collections
+2025-05-21 17:45:22.772 | INFO     | chatbot.embedding_service.services.embedding_service:list_collections:240 - Listing collections
+2025-05-21 17:45:22.775 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.0055s)
+2025-05-21 17:45:22.776 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56774 - "GET /api/v1/collections HTTP/1.1" 200
+2025-05-21 17:45:22.781 | INFO     | chatbot.embedding_service.main:log_requests:48 - Request: POST /api/v1/collections/query
+2025-05-21 17:45:22.783 | INFO     | chatbot.embedding_service.services.embedding_service:query_similar:180 - Querying 1 texts in collection 'insurance_documents'
+2025-05-21 17:45:22.785 | INFO     | chatbot.embedding_service.services.embedding_service:generate_embeddings:110 - Generating embeddings for 1 texts
+2025-05-21 17:45:23.014 | INFO     | chatbot.embedding_service.main:log_requests:56 - Response: 200 (0.2334s)
+2025-05-21 17:45:23.014 | INFO     | logging:callHandlers:1736 - 127.0.0.1:56776 - "POST /api/v1/collections/query HTTP/1.1" 200
+2025-05-21 17:46:11.211 | INFO     | logging:callHandlers:1736 - Shutting down
+2025-05-21 17:46:11.314 | INFO     | logging:callHandlers:1736 - Waiting for application shutdown.
+2025-05-21 17:46:11.315 | INFO     | logging:callHandlers:1736 - Application shutdown complete.
+2025-05-21 17:46:11.315 | INFO     | logging:callHandlers:1736 - Finished server process [87423]

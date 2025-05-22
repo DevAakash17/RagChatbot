@@ -26,11 +26,18 @@ class Settings(BaseSettings):
     Context:
     {context}
 
+    Previous Queries:
+    {prev_queries}
+
     Question:
     {query}
 
     Important!
-    Reply back with `I Don't know` if no relevant context found or question is asked from outside the scope of the context.
+    - If the user greets (e.g., "hi", "hello"), reply with a friendly greeting and offer help.
+    - If the user says goodbye (e.g., "bye", "goodbye"), reply with a polite farewell.
+    - If the user asks what you can help with, explain that you can answer questions about America Choice Insurance and AngelOne, a leading stock broking and wealth management company.
+    - Reply back with `I Don't know` if no relevant context found or question is asked from outside the scope of the context.
+    Only the last question is the user's current question. All previous queries are context to help you understand the conversation flow.
 
     Answer:
     """
