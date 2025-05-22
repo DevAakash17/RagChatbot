@@ -21,6 +21,9 @@ WORKDIR /chatbot
 # Copy Python requirements
 COPY requirements.txt .
 
+ENV PIP_NO_CACHE_DIR=1
+ENV TMPDIR=/tmp
+
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
