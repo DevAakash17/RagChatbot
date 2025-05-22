@@ -3,12 +3,12 @@ RAG service implementation.
 """
 from typing import Dict, Any, Optional, List
 
-from chatbot.rag_engine.core.config import settings
-from chatbot.rag_engine.core.engine import RAGEngine
-from chatbot.rag_engine.services.embedding_client import EmbeddingClient
-from chatbot.rag_engine.services.llm_client import LLMClient
-from chatbot.rag_engine.utils.errors import ValidationError, ResourceNotFoundError
-from chatbot.rag_engine.utils.logging import setup_logging
+from rag_engine.core.config import settings
+from rag_engine.core.engine import RAGEngine
+from rag_engine.services.embedding_client import EmbeddingClient
+from rag_engine.services.llm_client import LLMClient
+from rag_engine.utils.errors import ValidationError, ResourceNotFoundError
+from rag_engine.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)

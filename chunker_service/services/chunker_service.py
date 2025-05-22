@@ -7,14 +7,14 @@ import os
 import mimetypes
 from io import BytesIO
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.errors import ChunkingError, ValidationError, ResourceNotFoundError
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.chunking import get_chunking_strategy
-from chatbot.chunker_service.storage import get_storage_adapter
-from chatbot.chunker_service.services.embedding_client import EmbeddingClient
-from chatbot.chunker_service.services.document_tracker import DocumentTracker
-from chatbot.chunker_service.db.models import ProcessedDocument
+from chunker_service.core.config import settings
+from chunker_service.core.errors import ChunkingError, ValidationError, ResourceNotFoundError
+from chunker_service.core.logging import setup_logging
+from chunker_service.chunking import get_chunking_strategy
+from chunker_service.storage import get_storage_adapter
+from chunker_service.services.embedding_client import EmbeddingClient
+from chunker_service.services.document_tracker import DocumentTracker
+from chunker_service.db.models import ProcessedDocument
 
 
 logger = setup_logging(__name__)

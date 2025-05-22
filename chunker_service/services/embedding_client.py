@@ -5,9 +5,9 @@ from typing import List, Dict, Any, Optional, Tuple
 import aiohttp
 from fastapi import status
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.errors import EmbeddingServiceError, ServiceConnectionError
-from chatbot.chunker_service.core.logging import setup_logging
+from chunker_service.core.config import settings
+from chunker_service.core.errors import EmbeddingServiceError, ServiceConnectionError
+from chunker_service.core.logging import setup_logging
 
 
 logger = setup_logging(__name__)

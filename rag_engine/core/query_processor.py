@@ -4,7 +4,7 @@ Query processor for the RAG Engine.
 from typing import Optional, Dict, Any
 import re
 
-from chatbot.rag_engine.utils.logging import setup_logging
+from rag_engine.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)

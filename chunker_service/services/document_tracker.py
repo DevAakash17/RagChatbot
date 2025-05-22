@@ -5,11 +5,11 @@ from typing import Dict, Any, Optional, List
 from datetime import datetime
 import hashlib
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.core.errors import DatabaseError
-from chatbot.chunker_service.db import get_mongodb_client
-from chatbot.chunker_service.db.models import ProcessedDocument
+from chunker_service.core.config import settings
+from chunker_service.core.logging import setup_logging
+from chunker_service.core.errors import DatabaseError
+from chunker_service.db import get_mongodb_client
+from chunker_service.db.models import ProcessedDocument
 
 
 logger = setup_logging(__name__)

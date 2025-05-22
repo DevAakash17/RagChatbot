@@ -5,7 +5,7 @@ import logging
 import sys
 from typing import Optional
 
-from chatbot.chunker_service.core.config import settings
+from chunker_service.core.config import settings
 
 
 def setup_logging(name: Optional[str] = None) -> logging.Logger:

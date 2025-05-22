@@ -2,17 +2,17 @@
 API routes for the LLM service.
 """
 from fastapi import APIRouter, HTTPException, Depends, status
-from chatbot.llm_service.api.schemas import HealthResponse
+from llm_service.api.schemas import HealthResponse
 
-from chatbot.llm_service.api.schemas import (
+from llm_service.api.schemas import (
     GenerateTextRequest,
     GenerateTextResponse,
     ErrorResponse,
     TokenUsage
 )
-from chatbot.llm_service.core.services.llm_service import LLMService
-from chatbot.llm_service.utils.errors import LLMServiceError
-from chatbot.llm_service.utils.logging import setup_logging
+from llm_service.core.services.llm_service import LLMService
+from llm_service.utils.errors import LLMServiceError
+from llm_service.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)
@@ -33,22 +33,22 @@ router = APIRouter()
 async def generate_text(request: GenerateTextRequest):
     """
     Generate text based on the input prompt.
-    
+
     Args:
         request: Text generation request.
-        
+
     Returns:
         Generated text and metadata.
     """
     try:
         logger.info(f"Received text generation request for model: {request.model}")
-        
+
         result = await LLMService.generate_text(
             prompt=request.prompt,
             model_name=request.model,
             options=request.options
         )
-        
+
         # Convert the result to the response schema
         response = GenerateTextResponse(
             text=result["text"],
@@ -56,10 +56,10 @@ async def generate_text(request: GenerateTextRequest):
             usage=TokenUsage(**result["usage"]),
             finish_reason=result.get("finish_reason")
         )
-        
+
         logger.info(f"Successfully generated text with model: {request.model}")
         return response
-        
+
     except LLMServiceError as e:
         logger.error(f"LLM service error: {e.message}")
         raise HTTPException(

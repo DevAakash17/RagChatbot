@@ -11,8 +11,8 @@ from unittest.mock import patch, MagicMock
 # Add parent directory to path to import modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from chatbot.llm_service.core.models.gemini import GeminiModel
-from chatbot.llm_service.utils.errors import ModelResponseError
+from llm_service.core.models.gemini import GeminiModel
+from llm_service.utils.errors import ModelResponseError
 
 
 class TestGeminiModel(unittest.TestCase):

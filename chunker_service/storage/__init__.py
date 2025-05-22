@@ -3,12 +3,12 @@ Storage module for the Chunker Service.
 """
 from typing import Dict, Any, Optional
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.errors import StorageError
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.storage.base import BaseStorageAdapter
-from chatbot.chunker_service.storage.local import LocalStorageAdapter
-from chatbot.chunker_service.storage.s3 import S3StorageAdapter
+from chunker_service.core.config import settings
+from chunker_service.core.errors import StorageError
+from chunker_service.core.logging import setup_logging
+from chunker_service.storage.base import BaseStorageAdapter
+from chunker_service.storage.local import LocalStorageAdapter
+from chunker_service.storage.s3 import S3StorageAdapter
 
 
 logger = setup_logging(__name__)

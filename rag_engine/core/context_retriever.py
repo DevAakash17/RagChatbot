@@ -3,9 +3,9 @@ Context retriever for the RAG Engine.
 """
 from typing import List, Dict, Any, Optional
 
-from chatbot.rag_engine.core.config import settings
-from chatbot.rag_engine.services.embedding_client import EmbeddingClient
-from chatbot.rag_engine.utils.logging import setup_logging
+from rag_engine.core.config import settings
+from rag_engine.services.embedding_client import EmbeddingClient
+from rag_engine.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)

@@ -7,9 +7,9 @@ from datetime import datetime
 from io import BytesIO
 from typing import List, Dict, Any, Optional, AsyncGenerator
 
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.core.errors import StorageError, ResourceNotFoundError
-from chatbot.chunker_service.storage.base import BaseStorageAdapter
+from chunker_service.core.logging import setup_logging
+from chunker_service.core.errors import StorageError, ResourceNotFoundError
+from chunker_service.storage.base import BaseStorageAdapter
 
 
 logger = setup_logging(__name__)

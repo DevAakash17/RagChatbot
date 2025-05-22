@@ -8,10 +8,10 @@ from fastapi.responses import JSONResponse
 import time
 from typing import Dict, Any
 
-from chatbot.embedding_service.api.routes import router as api_router
-from chatbot.embedding_service.core.config import settings
-from chatbot.embedding_service.core.logging import setup_logging
-from chatbot.embedding_service.core.errors import EmbeddingServiceError
+from embedding_service.api.routes import router as api_router
+from embedding_service.core.config import settings
+from embedding_service.core.logging import setup_logging
+from embedding_service.core.errors import EmbeddingServiceError
 
 
 # Setup logging
@@ -101,7 +101,7 @@ async def root():
 if __name__ == "__main__":
     """Run the application."""
     uvicorn.run(
-        "chatbot.embedding_service.main:app",
+        "embedding_service.main:app",
         host="0.0.0.0",
         port=8000,
         reload=True,

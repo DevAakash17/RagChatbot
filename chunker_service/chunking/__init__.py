@@ -3,12 +3,12 @@ Chunking module for the Chunker Service.
 """
 from typing import Dict, Any, Optional
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.errors import ChunkingError
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.chunking.base import BaseChunkingStrategy
-from chatbot.chunker_service.chunking.fixed_size import FixedSizeChunkingStrategy
-from chatbot.chunker_service.chunking.semantic import SemanticChunkingStrategy
+from chunker_service.core.config import settings
+from chunker_service.core.errors import ChunkingError
+from chunker_service.core.logging import setup_logging
+from chunker_service.chunking.base import BaseChunkingStrategy
+from chunker_service.chunking.fixed_size import FixedSizeChunkingStrategy
+from chunker_service.chunking.semantic import SemanticChunkingStrategy
 
 
 logger = setup_logging(__name__)

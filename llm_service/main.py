@@ -6,10 +6,10 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from chatbot.llm_service.api.routes import router as api_router
-from chatbot.llm_service.config.settings import settings
-from chatbot.llm_service.utils.errors import LLMServiceError
-from chatbot.llm_service.utils.logging import setup_logging
+from llm_service.api.routes import router as api_router
+from llm_service.config.settings import settings
+from llm_service.utils.errors import LLMServiceError
+from llm_service.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)
@@ -18,7 +18,7 @@ logger = setup_logging(__name__)
 def create_application() -> FastAPI:
     """
     Create and configure the FastAPI application.
-    
+
     Returns:
         Configured FastAPI application.
     """
@@ -28,7 +28,7 @@ def create_application() -> FastAPI:
         openapi_url="/openapi.json",
         docs_url="/docs",
     )
-    
+
     # Add CORS middleware
     app.add_middleware(
         CORSMiddleware,
@@ -37,7 +37,7 @@ def create_application() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    
+
     # Add exception handlers
     @app.exception_handler(LLMServiceError)
     async def llm_service_error_handler(request: Request, exc: LLMServiceError):
@@ -49,10 +49,10 @@ def create_application() -> FastAPI:
                 "details": exc.details
             }
         )
-    
+
     # Include API routes
     app.include_router(api_router, prefix=settings.API_V1_PREFIX)
-    
+
     @app.get("/health")
     async def health_check():
         """Health check endpoint."""
@@ -66,7 +66,7 @@ def create_application() -> FastAPI:
             "docs": "/docs",
             "health": "/health"
         }
-    
+
     return app
 
 
@@ -76,7 +76,7 @@ app = create_application()
 if __name__ == "__main__":
     logger.info(f"Starting {settings.PROJECT_NAME}")
     uvicorn.run(
-        "chatbot.llm_service.main:app",
+        "llm_service.main:app",
         host="0.0.0.0",
         port=8001,
         reload=settings.DEBUG

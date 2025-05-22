@@ -2,9 +2,8 @@
 API routes for the RAG Engine.
 """
 from fastapi import APIRouter, Depends, HTTPException, status
-from typing import List, Dict, Any
 
-from chatbot.rag_engine.api.schemas import (
+from rag_engine.api.schemas import (
     QueryRequest,
     QueryResponse,
     StoreDocumentsRequest,
@@ -15,9 +14,9 @@ from chatbot.rag_engine.api.schemas import (
     ContextDocument,
     TokenUsage
 )
-from chatbot.rag_engine.services.rag_service import RAGService
-from chatbot.rag_engine.utils.errors import RAGEngineError
-from chatbot.rag_engine.utils.logging import setup_logging
+from rag_engine.services.rag_service import RAGService
+from rag_engine.utils.errors import RAGEngineError
+from rag_engine.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)

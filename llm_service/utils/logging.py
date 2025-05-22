@@ -5,7 +5,7 @@ import logging
 import sys
 from typing import Optional
 
-from chatbot.llm_service.config.settings import settings
+from llm_service.config.settings import settings
 
 
 def setup_logging(name: Optional[str] = None) -> logging.Logger:

@@ -4,9 +4,9 @@ Semantic chunking strategy.
 import re
 from typing import List, Dict, Any, Optional
 
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.core.errors import ChunkingError
-from chatbot.chunker_service.chunking.base import BaseChunkingStrategy
+from chunker_service.core.logging import setup_logging
+from chunker_service.core.errors import ChunkingError
+from chunker_service.chunking.base import BaseChunkingStrategy
 
 
 logger = setup_logging(__name__)

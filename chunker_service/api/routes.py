@@ -4,7 +4,7 @@ API routes for the Chunker Service.
 from fastapi import APIRouter, Depends, HTTPException, status
 from typing import List, Dict, Any
 
-from chatbot.chunker_service.api.schemas import (
+from chunker_service.api.schemas import (
     ChunkDocumentRequest,
     ChunkDocumentResponse,
     ChunkCollectionRequest,
@@ -12,10 +12,10 @@ from chatbot.chunker_service.api.schemas import (
     HealthResponse,
     ErrorResponse
 )
-from chatbot.chunker_service.core.errors import ChunkerServiceError
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.services.chunker_service import ChunkerService
-from chatbot.chunker_service.services.embedding_client import EmbeddingClient
+from chunker_service.core.errors import ChunkerServiceError
+from chunker_service.core.logging import setup_logging
+from chunker_service.services.chunker_service import ChunkerService
+from chunker_service.services.embedding_client import EmbeddingClient
 
 
 logger = setup_logging(__name__)

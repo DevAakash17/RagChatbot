@@ -8,10 +8,10 @@ from fastapi.responses import JSONResponse
 import time
 from typing import Dict, Any
 
-from chatbot.chunker_service.api.routes import router as api_router
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.core.errors import ChunkerServiceError
+from chunker_service.api.routes import router as api_router
+from chunker_service.core.config import settings
+from chunker_service.core.logging import setup_logging
+from chunker_service.core.errors import ChunkerServiceError
 
 
 # Setup logging
@@ -101,9 +101,9 @@ async def root():
 if __name__ == "__main__":
     """Run the application."""
     uvicorn.run(
-        "chatbot.chunker_service.main:app",
+        "chunker_service.main:app",
         host="0.0.0.0",
-        port=8004,
+        port=8002,
         reload=True,
         log_level="info"
     )

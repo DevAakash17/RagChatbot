@@ -3,9 +3,9 @@ Database module for the Chunker Service.
 """
 from typing import Optional
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.db.mongodb import MongoDBClient
+from chunker_service.core.config import settings
+from chunker_service.core.logging import setup_logging
+from chunker_service.db.mongodb import MongoDBClient
 
 logger = setup_logging(__name__)
 

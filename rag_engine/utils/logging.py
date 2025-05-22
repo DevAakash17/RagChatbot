@@ -5,7 +5,7 @@ import logging
 import sys
 from typing import Optional
 
-from chatbot.rag_engine.core.config import settings
+from rag_engine.core.config import settings
 
 
 def setup_logging(name: Optional[str] = None) -> logging.Logger:

@@ -6,9 +6,9 @@ from typing import Dict, Any, Optional, List
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.errors import PyMongoError
 
-from chatbot.chunker_service.core.config import settings
-from chatbot.chunker_service.core.logging import setup_logging
-from chatbot.chunker_service.core.errors import DatabaseError
+from chunker_service.core.config import settings
+from chunker_service.core.logging import setup_logging
+from chunker_service.core.errors import DatabaseError
 
 logger = setup_logging(__name__)
 

@@ -6,9 +6,9 @@ from typing import Dict, Any, Optional
 
 import aiohttp
 
-from chatbot.llm_service.core.models.base import BaseLLMModel
-from chatbot.llm_service.utils.errors import ModelRequestError, ModelResponseError
-from chatbot.llm_service.utils.logging import setup_logging
+from llm_service.core.models.base import BaseLLMModel
+from llm_service.utils.errors import ModelRequestError, ModelResponseError
+from llm_service.utils.logging import setup_logging
 
 
 logger = setup_logging(__name__)
