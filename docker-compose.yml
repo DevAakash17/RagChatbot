@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0.8
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=chunker_service
+    command: ["mongod", "--quiet", "--logpath", "/dev/null"]
+    logging:
+      driver: "none"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot
+    ports:
+      - "3000:3000"  # Frontend
+      - "8000:8000"  # Embedding service
+      - "8001:8001"  # LLM service
+      - "8002:8002"  # RAG engine & Chunker service
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    environment:
+      # MongoDB connection
+      - MONGODB_CONNECTION_STRING=mongodb://mongodb:27017
+      - MONGODB_DATABASE_NAME=chunker_service
+
+      # Service URLs (internal container networking)
+      - EMBEDDING_SERVICE_URL=http://localhost:8000/api/v1
+      - LLM_SERVICE_URL=http://localhost:8001/api/v1
+
+      # Other settings
+      - DEBUG=True
+      - LOG_LEVEL=INFO
+
+      # Add your Gemini API key here
+      - GEMINI_API_KEY=AIzaSyARON2KBaagy6uzNRrLKpO95TwD8SQzxNE
+    volumes:
+      - ./chatbot:/app/chatbot
+      - node_modules:/app/chatbot/node_modules
+      - next_cache:/app/chatbot/.next
+
+volumes:
+  mongodb_data:
+  node_modules:
+  next_cache:
