@@ -4,7 +4,6 @@ set -e
 echo "Starting RAG Chatbot Application..."
 
 # Create necessary directories
-mkdir -p /app/vector_db_data
 mkdir -p /app/storage_data
 
 # Start backend services in the background
@@ -26,6 +25,10 @@ cd /chatbot/backend && python -m uvicorn main:app --host 0.0.0.0 --port 8005 --r
 # Wait for backend services to start
 echo "Waiting for backend services to start..."
 sleep 10
+
+# copy vector db data from embedding_service to home
+cp -r /chatbot/embedding_service/vector_db_data /chatbot
+echo "Vector DB data copied to /chatbot/vector_db_data"
 
 # Start the frontend
 echo "Starting Frontend..."
