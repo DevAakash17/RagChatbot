@@ -15,7 +15,7 @@ from bson import ObjectId
 load_dotenv()
 
 # MongoDB setup
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://0.0.0.0:27017")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongodb:27017")
 client = MongoClient(MONGO_URI)
 db = client["chunker_service"]
 users_collection = db["users"]
@@ -137,7 +137,7 @@ async def register_user(user: UserCreate):
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Username already registered"
         )
-    
+
     # Create new user
     hashed_password = get_password_hash(user.password)
     new_user = {
@@ -145,15 +145,15 @@ async def register_user(user: UserCreate):
         "password": hashed_password,
         "created_at": datetime.utcnow()
     }
-    
+
     result = users_collection.insert_one(new_user)
-    
+
     # Create access token
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
-    
+
     return {
         "access_token": access_token,
         "token_type": "bearer",
