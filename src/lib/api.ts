@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// Define the API base URLs
-const AUTH_API_URL = 'http://0.0.0.0:8005';
-const RAG_API_URL = 'http://0.0.0.0:8003/api/v1';
+// Define the API base URLs - using relative paths for API routes
+const AUTH_API_URL = '/api/auth';
+const RAG_API_URL = '/api/rag';
 
 // Define the types for our API requests and responses
 export interface QueryRequest {
