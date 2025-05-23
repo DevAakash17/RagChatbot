@@ -5,7 +5,8 @@ import getConfig from 'next/config';
 const { serverRuntimeConfig } = getConfig();
 
 // Internal URL for the RAG service (only accessible from the server)
-const RAG_SERVICE_URL = serverRuntimeConfig.ragServiceUrl || 'http://localhost:8003/api/v1';
+// Remove the /api/v1 suffix as it's causing path duplication
+const RAG_SERVICE_URL = (serverRuntimeConfig.ragServiceUrl || 'http://localhost:8003').replace(/\/api\/v1$/, '');
 
 /**
  * Handle all RAG service API requests
@@ -20,7 +21,11 @@ export async function GET(
   const queryString = url.search;
 
   try {
-    const response = await fetch(`${RAG_SERVICE_URL}/${path}${queryString}`, {
+    // Construct the correct path for the RAG service
+    const fullPath = `/api/v1/${path}`;
+    console.log(`Forwarding request to: ${RAG_SERVICE_URL}${fullPath}${queryString}`);
+
+    const response = await fetch(`${RAG_SERVICE_URL}${fullPath}${queryString}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +61,11 @@ export async function POST(
   try {
     const body = await request.json();
 
-    const response = await fetch(`${RAG_SERVICE_URL}/${path}`, {
+    // Construct the correct path for the RAG service
+    const fullPath = `/api/v1/${path}`;
+    console.log(`Forwarding request to: ${RAG_SERVICE_URL}${fullPath}`);
+
+    const response = await fetch(`${RAG_SERVICE_URL}${fullPath}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -7,7 +7,8 @@ const nextConfig = {
   serverRuntimeConfig: {
     // Will only be available on the server side
     authServiceUrl: process.env.AUTH_SERVICE_URL || 'http://localhost:8005',
-    ragServiceUrl: process.env.RAG_SERVICE_URL || 'http://localhost:8003/api/v1',
+    // Remove the /api/v1 suffix from the RAG service URL to avoid path duplication
+    ragServiceUrl: process.env.RAG_SERVICE_URL || 'http://localhost:8003',
   },
 
   // Configure both client and server side behavior
