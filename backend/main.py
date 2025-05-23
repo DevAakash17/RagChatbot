@@ -15,7 +15,7 @@ from bson import ObjectId
 load_dotenv()
 
 # MongoDB setup
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://0.0.0.0:27017")
 client = MongoClient(MONGO_URI)
 db = client["chunker_service"]
 users_collection = db["users"]
